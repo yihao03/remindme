@@ -1,0 +1,896 @@
+{
+  "sections": [
+    {
+      "title": "Section 1: Introduction to Dementia",
+      "id": 1,
+      "subsections": [
+        {
+          "title": "What is Dementia?",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Dementia is a condition that affects the brain and makes it harder for a person to remember things, think clearly, solve problems or manage daily activities. It happens when brain cells are damaged by certain diseases and get worse over time. The symptoms can be different for each person, depending on which parts of the brain are affected. While people with dementia stay awake and aware, they may also go through changes in their mood, emotions, behaviour or motivation, sometimes even before memory problems begin. In Malaysia, about 850,000 people are currently living with dementia."
+            }
+          ]
+        },
+        {
+          "title": "Most Common Types of Dementia",
+          "content": [
+            {
+              "type": "header",
+              "text": "Alzheimer's Disease"
+            },
+            {
+              "type": "list",
+              "items": [
+                "The most common cause of dementia, making up about 60–70% of all cases.",
+                "Alzheimer's disease happens when certain proteins build up in the brain, damaging brain cells and the connections between them. Over time, these cells start to die, leading to memory loss and changes in thinking.",
+                "The first sign is often difficulty remembering recent events, but people may also find it hard to find the right words, solve problems, make decisions or understand things like distance and space."
+              ]
+            },
+            {
+              "type": "header",
+              "text": "Vascular Dementia"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Vascular dementia happens when the brain doesn't get enough blood and oxygen because some blood vessels become blocked or narrowed. This can damage brain cells and usually occurs after a major stroke or several small strokes.",
+                "People with vascular dementia may find it harder to plan, stay focused, solve problems or think as quickly as before. At times, they might also feel suddenly confused, but these moments can come and go."
+              ]
+            },
+            {
+              "type": "header",
+              "text": "Dementia with Lewy Bodies"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Dementia with Lewy bodies happens when tiny abnormal structures, called Lewy bodies, build up inside brain cells. These affect how the brain works and eventually cause brain cells to die.",
+                "People with this dementia may notice that their alertness or attention changes throughout the day. They might seem sharp at one moment and confused the next. They may also experience visual hallucinations (seeing things that aren't really there) or have trouble judging distances.",
+                "This condition is closely related to Parkinson's disease, so some people may also have movement problems, such as stiffness, slow movement or trembling."
+              ]
+            },
+            {
+              "type": "header",
+              "text": "Frontotemporal Dementia"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Frontotemporal dementia happens when the front and side parts of the brain are damaged by a buildup of abnormal proteins that cause brain cells to die.",
+                "The first signs are often changes in personality or behaviour. The person may act differently than usual or seem less aware of social boundaries. Depending on which parts of the brain are affected, they may also have trouble speaking smoothly or understanding the meaning of words.",
+                "This type of dementia often occurs at a younger age."
+              ]
+            },
+            {
+              "type": "header",
+              "text": "Mixed Dementia"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Mixed dementia happens when a person has more than one type of dementia, such as Alzheimer's and vascular dementia. This causes a mix of symptoms from the different dementia types like memory loss, confusion and thinking problems."
+              ]
+            },
+            {
+              "type": "header",
+              "text": "Rare Causes of Dementia"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Dementia can also develop from other causes, such as after a stroke, certain infections like HIV, heavy alcohol use, repeated head injuries or severe nutritional deficiencies."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Recognising the Symptoms of Dementia",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Dementia can show up in many different ways, such that no two people experience it exactly the same. The symptoms depend on the cause, the person's overall health and how their brain was working before the illness began. Early signs may be subtle and easy to overlook, but they often become clearer over time. Below are some common symptoms and changes that may occur."
+            },
+            {
+              "type": "header",
+              "text": "Memory Loss and Forgetfulness"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Forgetting recent events or conversations",
+                "Misplacing items or losing things more often",
+                "Getting lost while walking or driving in familiar places",
+                "Forgetting names of friends or everyday objects",
+                "Struggling to remember things seen, heard or read recently"
+              ]
+            },
+            {
+              "type": "header",
+              "text": "Confusion and Communication Difficulties"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Feeling confused, even in familiar surroundings",
+                "Losing track of time or day",
+                "Finding it hard to follow conversations or TV programmes",
+                "Forgetting what you were saying midway through a sentence",
+                "Trouble finding the right words when speaking"
+              ]
+            },
+            {
+              "type": "header",
+              "text": "Thinking, Problem-Solving and Daily Tasks"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Difficulty making decisions or solving problems",
+                "Struggling to perform familiar tasks",
+                "Problems with judging distances or seeing things clearly",
+                "Trouble thinking logically or planning ahead"
+              ]
+            },
+            {
+              "type": "header",
+              "text": "Mood and Behavior Changes"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Feeling anxious, sad or frustrated about memory loss",
+                "Personality changes or acting differently from usual",
+                "Inappropriate or out-of-character behaviour",
+                "Withdrawing from work, hobbies or social activities",
+                "Showing less interest in the feelings of others"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Over time, symptoms may become more severe. The person may need help with personal care and everyday activities. They might experience the following changes."
+            },
+            {
+              "type": "list",
+              "items": [
+                "Struggle to recognize family and friends",
+                "Have trouble walking or moving around",
+                "Lose control of their bladder or bowels",
+                "Find it hard to eat or drink",
+                "Experience mood swings or aggressive behaviour, which can be distressing for both the person and their loved ones"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "How Dementia is Diagnosed",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Diagnosing dementia involves several steps and it's usually done by specialistdoctor such as a psychiatrist, geriatrician or neurologist."
+            },
+            {
+              "type": "list",
+              "items": [
+                "The doctor will talk with the person and someone close to them to understand the changes that have developed and how these are affecting daily life.",
+                "Simple tests, such as the Mini-Mental State Examination (MMSE) or the Montreal Cognitive Assessment (MoCA), are typically used to check memory and thinking skills.",
+                "Blood tests may be done to rule out other causes of memory problems, such as thyroid issues or vitamin deficiencies.",
+                "In some cases, an MRI scan is recommended to look for changes or damage in the brain that can help confirm the diagnosis."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Treatment and Management of Dementia",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "If you or someone you know is showing signs of dementia, it is important to seek help early from a healthcare professional. A doctor can assess the situation, provide guidance and connect you with the right support. You can also visit the Alzheimer's Disease Foundation Malaysia (ADFM) website for more information, resources and local support services."
+            },
+            {
+              "type": "list",
+              "items": ["Supportive Treatments and Lifestyle Approaches"]
+            },
+            {
+              "type": "paragraph",
+              "text": "While there is currently no cure for dementia, many daily habits and supportive activities can help improve quality of life and slow the progression of symptoms."
+            },
+            {
+              "type": "list",
+              "items": [
+                "Cognitive and memory activities: Puzzles, reading or memory games will help to keep the mind active",
+                "Routine and structure: Keep a regular daily routine to reduce confusion and stress",
+                "Physical activity: Regular exercise like walking, stretching or light workouts can boost mood, sleep and overall brain health. If the person you're caring for has mobility issues, chair-based exercises are good alternatives to maintain physical activities.",
+                "Healthy eating: A balanced diet rich in fruits, vegetables, whole grains and lean proteins supports brain function",
+                "Social engagement: Staying connected with family, friends or community groups help reduce loneliness",
+                "Occupational and speech therapy: Professionals can provide strategies to improve communication, safety and independence at home",
+                "Medication"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Medicines may be helpful for some types of dementia, but not all. They can ease certain symptoms, such as memory or thinking problems, and may help with mood or behaviour changes. However, they cannot cure dementia or stop it from progressing. Your doctor will explain which treatments, if any, are suitable and help you decide what's best for your needs."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Section 2: Being a Caregiver",
+      "id": 2,
+      "subsections": [
+        {
+          "title": "The Role of a Dementia Caregiver",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Most dementia caregivers are family members or close friends who step in out of love and responsibility. Their role is to protect the person's dignity, comfort and daily well-being. At first, this may mean giving reminders and helping with simple routines, but over time it often grows into providing full personal, medical and emotional care. Caregivers also become advocates, planning healthcare and future needs. In Malaysia, caregiving is usually shared among family members, with at least two caregivers recommended to reduce burnout."
+            }
+          ]
+        },
+        {
+          "title": "Key Responsibilities",
+          "content": [
+            {
+              "type": "header",
+              "text": "Daily care"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Caregivers help with bathing, grooming, dressing, toileting, meals and medication",
+                "Encourage independence where possible but step in when safety or memory issues make it necessary"
+              ]
+            },
+            {
+              "type": "header",
+              "text": "Safety"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Homes must be adapted - removing hazards, preventing wandering and arranging safe transport when driving is no longer possible"
+              ]
+            },
+            {
+              "type": "header",
+              "text": "Routine and activities"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Keeping a predictable daily schedule reduces agitation",
+                "Activities like listening to music, keeping photo albums, solving puzzles or simple chores can bring joy and preserve memory",
+                "When the dementia progresses, adjust the routine/ activities according to the capabilities of the person you're caring for"
+              ]
+            },
+            {
+              "type": "header",
+              "text": "Behavior management"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Agitation often comes from triggers like noise, tiredness or hunger",
+                "Caregivers should learn to respond calmly, reassure instead of argue, and adjust routines to reduce stress"
+              ]
+            },
+            {
+              "type": "header",
+              "text": "Communication and companionship"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Speaking slowly, using short sentences and close-ended questions",
+                "Use touch or smiles can convey trust and love",
+                "Small moments of shared presence, such as walking, sitting together, looking at old photos, will help reduce loneliness"
+              ]
+            },
+            {
+              "type": "header",
+              "text": "Healthcare and planning"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Caregivers track symptoms, attend appointments and discuss long-term treatment preferences (Advanced Care Planning) early",
+                "They also handle financial matters, including managing their bank accounts andsetting up legal documents such as Power of Attorney"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Challenges of Caregiving",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Caring for someone with dementia can be exhausting. Many caregivers face constant stress, sleep disruption and emotional turmoil — grief, guilt, frustration or sadness as their loved one changes over time. The physical demands, like lifting or moving the person, can harm their own health, while social isolation and loss of personal time often deepen the strain."
+            }
+          ]
+        },
+        {
+          "title": "Support and Resources",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "No one should carry the weight alone. Sharing duties with family, joining support groups and accessing local organizations can make a big difference. In Malaysia, the Alzheimer's Disease Foundation (ADFM), Penang Dementia Association (PDA), The Dementia Society Perak and Johor Bahru Alzheimer's Disease Support Association (JOBADA)offer helplines, caregiver trainings and daycare options. Respite care options such as day centers or short-term carers give families much-needed breaks. Professional advice from doctors, therapists or legal and financial experts can also ease the burden."
+            }
+          ]
+        },
+        {
+          "title": "Tips for New Caregivers",
+          "content": [
+            {
+              "type": "list",
+              "items": [
+                "Prepare early by learning practical skills from resources like \"iSupport for Dementia\" (developed by World Health Organisation) or ADFM workshops",
+                "Keep routines consistent to reduce confusion",
+                "Use clear and simple communication, using short sentences and close-ended questions",
+                "Make the home safe with labels, ensure sufficient brightness in the house, and clutter-free spaces",
+                "Encourage small tasks to maintain independence and dignity",
+                "Plan finances and legal matters early. Discuss advanced care planning with the person you're caring for as early as possible.",
+                "Look after your own health — rest, checkups and accepting help are essential",
+                "Build a support network, whether in-person or online, and use technology like reminder apps to stay organized"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Section 3: Caregiving Essentials",
+      "id": 3,
+      "subsections": [
+        {
+          "title": "Introduction",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Caring for a person with dementia can be both meaningful and challenging. Understanding their daily needs, communication styles and behavioural changes can make caregiving smoother and more compassionate. This section provides key practical tips from WHO's \"iSupport for Dementia\" modules and dementia associations to help caregivers provide safe and supportive care, while maintaining their own wellbeing."
+            }
+          ]
+        },
+        {
+          "title": "Daily Care",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Providing consistent and respectful care helps maintain comfort, dignity and quality of life for persons with dementia."
+            },
+            {
+              "type": "header",
+              "text": "Meals and Hydration"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Encourage regular eating and drinking",
+                "Modify food texture and utensils if needed",
+                "Involve the person in mealtime activities, such as setting up tables, washing, meal prepping",
+                "Monitor for swallowing difficulties or weight loss",
+                "Appetite loss is common among persons with dementia, as dementia may disrupt their sense of taste and smell. Look out for other causes such as exhaustion, sickness, medication side effects, confusion caused by distracting environment, or constipation."
+              ]
+            },
+            {
+              "type": "header",
+              "text": "Toileting and Continence"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Support with empathy, understanding that they may feel embarrassed for needing toileting assistance from you",
+                "Respect their privacy",
+                "Use clear toilet signs, regular schedules and proper hygiene care to prevent infections and discomfort"
+              ]
+            },
+            {
+              "type": "header",
+              "text": "Personal Care"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Assist with bathing, dressing and grooming while promoting independence wherever safe and possible",
+                "Use a calm and gentle approach to reduce agitation.",
+                "Try not to force them to do something they do not wish to. Walk away from the argument, come back and try again later."
+              ]
+            },
+            {
+              "type": "header",
+              "text": "Daily Routines"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Maintain predictable schedules to reduce anxiety and confusion",
+                "Familiar activities like music, light exercise or reminiscence help keep the person engaged and reassured"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Communication",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Effective communication is key to understanding people with dementia and meeting their needs."
+            },
+            {
+              "type": "list",
+              "items": [
+                "Use simple and clear sentences",
+                "Speak slowly and maintain eye contact",
+                "Reduce distractions and ensure hearing aids or glasses are used correctly",
+                "Avoid correcting mistakes harshly. Focus on reassurance and emotional connection to prevent arguments",
+                "Pay attention to non-verbal cues like tone, gestures and facial expressions",
+                "Offer praise and encouragement to support confidence and self-esteem"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Behavioural and Psychological Changes",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Behavioural changes are symptoms of dementia, not intentional actions. Understanding triggers and responding calmly can help manage them."
+            },
+            {
+              "type": "header",
+              "text": "Memory Loss"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Use reminders, notes and calendar",
+                "Stick to consistent routines as much as possible",
+                "Reassure instead of correcting"
+              ]
+            },
+            {
+              "type": "header",
+              "text": "Aggression or Agitation"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Aggression and agitation often stem from fear, pain or confusion",
+                "Avoid arguing. Try to Remain calm and redirect their attention",
+                "If you find yourself agitating, walk away from the situation, take few deep breaths, and come back to the situation when you're calmer"
+              ]
+            },
+            {
+              "type": "header",
+              "text": "Depression, Anxiety and Apathy"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Encourage social interaction and pleasant activities",
+                "Seek professional support if symptoms persist (e.g. psychologist)"
+              ]
+            },
+            {
+              "type": "header",
+              "text": "Wandering"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Ensure safety with ID bracelets, secured doors and supervised walks"
+              ]
+            },
+            {
+              "type": "header",
+              "text": "Delusions and Hallucinations"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Avoid arguing, instead reassure and distract",
+                "Adjust lighting or noise if environmental triggers exist"
+              ]
+            },
+            {
+              "type": "header",
+              "text": "Repetitive behaviour"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Redirect to safe, purposeful activities and respond with patience"
+              ]
+            },
+            {
+              "type": "header",
+              "text": "Judgement changes"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Anticipate risky behaviour",
+                "Adapt the environment and use \"dementia cards\" to explain situations to others if needed in public"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Safety and Environment",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "A safe and supportive environment helps reduce confusion and accidents"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Create a dementia-friendly home with clear lighting, uncluttered spaces and labelled rooms to aid recognition",
+                "Use non-slip mats, stable furniture and visual contrast (e.g. bright plates or toilet seats with colour contrasts)",
+                "Check regularly for health issues like infections, falls or swallowing problems",
+                "Keep emergency contacts and medical information easily accessible"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Caregiver Well-Being",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Caring for someone with dementia can be emotionally and physically demanding — Carers need care too!"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Take breaks and maintain your own health through rest, exercise and hobbies",
+                "Join caregiver support groups (e.g., ADFM, Penang Dementia Association) to share experiences and gain guidance",
+                "Don't hesitate to seek help from family, friends or professional respite services",
+                "Educate yourself about dementia to reduce uncertainty and stress",
+                "Discuss and plan ahead for future care, finances and preferences early to avoid crisis decisions when the time comes"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Section 4: Caring for Yourself",
+      "id": 4,
+      "subsections": [
+        {
+          "title": "Introduction",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Caring for someone with dementia often takes a lot of time, energy and patience. Caregivers might forget to care for themselves. This section shares simple ways to look after your own well-being. You will learn easy relaxation exercises to help you feel calmer and ideas for doing enjoyable activities that give you energy. We also provide tips on how to think more positively about difficult situations. Remember, taking care of yourself helps you stay healthy and continue caring for your loved one."
+            }
+          ]
+        },
+        {
+          "title": "Relaxation Exercises",
+          "content": [
+            {
+              "type": "header",
+              "text": "Basic Breathing (&lt; 5 mins): Helps reduce tension"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Sit or stand up straight with both feet flat on the floor",
+                "Focus on your breathing",
+                "Put your hand on your stomach to feel it rise and fall with each breath",
+                "Exhale from your mouth and pull your stomach in",
+                "Repeat for a few breaths, then rest"
+              ]
+            },
+            {
+              "type": "header",
+              "text": "Mindful Breathing Technique (5 mins): Reduces stress and helps you focus"
+            },
+            {
+              "type": "link",
+              "url": "https://youtube.com/shorts/y9jbHCRq9Ho?si=IfwbMA3C568KQ9A7",
+              "text": "https://youtube.com/shorts/y9jbHCRq9Ho?si=IfwbMA3C568KQ9A7"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Sit straight with relaxed shoulders",
+                "Breathe in through your stomach for 4 counts",
+                "Hold for 7 counts",
+                "Breathe out for 8 counts",
+                "Practice listening to your own thoughts without negative judgement"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Neck Movements (5 mins): Releases tension and improves blood flow"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Move slowly and gently",
+                "Nod forward and backward (inhale up, exhale down)",
+                "Turn your head side to side (inhale center, exhale side)",
+                "Drop your ear to your shoulder (inhale center, exhale drop)",
+                "Repeat 5 times"
+              ]
+            },
+            {
+              "type": "header",
+              "text": "Total Stretching (10 mins): Do it at any time at any where"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Stand up or sit tall in your chair",
+                "Take slow, deep breaths — feel the tension leave your body as you exhale",
+                "Stretch your arms to the sides, in front, and up toward the sky",
+                "Feel your back, shoulders, and arms loosen with each stretch"
+              ]
+            },
+            {
+              "type": "list",
+              "items": [
+                "Roll your shoulders back three times, then forward three times",
+                "Shrug your shoulders up and down a few times",
+                "Finish with one deep, relaxing breath — release all remaining tension"
+              ]
+            },
+            {
+              "type": "table",
+              "note": "Table content - see HTML for details"
+            }
+          ]
+        },
+        {
+          "title": "When and Where to Relax",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "You can take time to relax anywhere and at any time of the day. Try setting a goal to practice a relaxation exercise at least once daily, and if it helps, schedule a specific time  using a reminder. Even a brief exercise can make a noticeable difference – helping you feel refreshed, improving your mood and reducing feelings of tension."
+            }
+          ]
+        },
+        {
+          "title": "Making Time for Pleasant Activities",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Doing things that you enjoy such as going for a walk, talking to a friend or listening to music can help you relax and recharge. Because caregiving can last a long time, it's important to take time for pleasant activities so you can continue providing care over the long term. Here is a list of common challenges that you may often face when trying to find time for yourself:"
+            },
+            {
+              "type": "header",
+              "text": "Barriers"
+            },
+            {
+              "type": "header",
+              "text": "How to Overcome It"
+            },
+            {
+              "type": "header",
+              "text": "No Time"
+            },
+            {
+              "type": "paragraph",
+              "text": "Choose short, simple activities that you enjoy. Create priority list and let go of non-urgent tasks, e.g. ask yourself if cleaning every day is really necessary. You might find you have more time than you thought."
+            },
+            {
+              "type": "header",
+              "text": "No Energy"
+            },
+            {
+              "type": "paragraph",
+              "text": "Even if it's hard to imagine, doing something you enjoy can actually give you more energy and lift your mood."
+            },
+            {
+              "type": "header",
+              "text": "No Money"
+            },
+            {
+              "type": "paragraph",
+              "text": "Many pleasant activities are free, e.g. walking, chatting with a friend or listening to music."
+            },
+            {
+              "type": "header",
+              "text": "Not in the Mood"
+            },
+            {
+              "type": "paragraph",
+              "text": "Your mood often improves after doing something pleasant. Try starting small — even a few minutes can make a difference."
+            },
+            {
+              "type": "header",
+              "text": "Feeling Guilty"
+            },
+            {
+              "type": "paragraph",
+              "text": "Taking time to relax and do things you enjoy is not selfish, but it helps you provide better care. Being a good carer means caring for yourself too!"
+            }
+          ]
+        },
+        {
+          "title": "Thinking Differently",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "How you think about an event affects how you feel. One way of dealing with stressful events is to think differently. You cannot change what happens, but you can change your response."
+            },
+            {
+              "type": "header",
+              "text": "Lost Keys - An example that shows how helpful thoughts can make it easier to respond to difficult situations"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Jo is married to Max who is living with dementia.",
+                "One day, Jo is about to leave the house to visit a friend. Max says, \"I can't find my keys! You cannot leave me without keys!\"",
+                "Jo thinks to herself, \"I cannot leave him alone anymore.\" She starts to feel miserable.",
+                "This means that Jo is thinking in an unhelpful way. It will be harder to respond in useful ways to situations like this.",
+                "Instead, Jo could think, \"Max has dementia and is sometimes worried when he loses things. I can take some time to help and then go.\" This different way of thinking will probably make Jo feel better and help her stay calm and compassionate."
+              ]
+            },
+            {
+              "type": "header",
+              "text": "Unhelpful Thoughts"
+            },
+            {
+              "type": "header",
+              "text": "Helpful Thoughts"
+            },
+            {
+              "type": "paragraph",
+              "text": "I have to do everything alone"
+            },
+            {
+              "type": "paragraph",
+              "text": "Asking for help from others can help me to share the burden of care"
+            },
+            {
+              "type": "paragraph",
+              "text": "When the person I care for is not happy, it means that I am a bad carer"
+            },
+            {
+              "type": "paragraph",
+              "text": "Dementia is a disease. It is not mine or anyone else's fault"
+            },
+            {
+              "type": "paragraph",
+              "text": "I must always be available for the person I care for"
+            },
+            {
+              "type": "paragraph",
+              "text": "It is okay to take time to relax as it will help me to provide a good standard of care"
+            },
+            {
+              "type": "paragraph",
+              "text": "I should not consider my own needs if I want to be a good carer"
+            },
+            {
+              "type": "paragraph",
+              "text": "Making time for myself is important, as it helps me to provide better care"
+            },
+            {
+              "type": "paragraph",
+              "text": "No one understands how hard it is to care"
+            },
+            {
+              "type": "paragraph",
+              "text": "Sharing my feelings with others helps to take the pressure off"
+            },
+            {
+              "type": "paragraph",
+              "text": "Dementia Associations in Malaysia"
+            },
+            {
+              "type": "table",
+              "note": "Table content - see HTML for details"
+            },
+            {
+              "type": "header",
+              "text": "Dementia Associations"
+            },
+            {
+              "type": "header",
+              "text": "Phone Numbers"
+            },
+            {
+              "type": "header",
+              "text": "Selangor"
+            },
+            {
+              "type": "paragraph",
+              "text": "Alzheimer's Disease Foundation Malaysia (ADFM), Petaling Jaya"
+            },
+            {
+              "type": "paragraph",
+              "text": "03-7958 3008"
+            },
+            {
+              "type": "paragraph",
+              "text": "ADFM Daycare Center, Seksyen 11, Petaling Jaya"
+            },
+            {
+              "type": "paragraph",
+              "text": "017-338 2008"
+            },
+            {
+              "type": "paragraph",
+              "text": "ADFM Megah Rise Community Centre (AMCC), Megah Rise Mall, Petaling Jaya"
+            },
+            {
+              "type": "paragraph",
+              "text": "016-608 2513"
+            },
+            {
+              "type": "paragraph",
+              "text": "ADFM Dementia Helpline"
+            },
+            {
+              "type": "paragraph",
+              "text": "03–7931 5850"
+            },
+            {
+              "type": "header",
+              "text": "Perak"
+            },
+            {
+              "type": "paragraph",
+              "text": "The Dementia Society Perak, Jalan Lang, Ipoh"
+            },
+            {
+              "type": "paragraph",
+              "text": "05-506 0806"
+            },
+            {
+              "type": "paragraph",
+              "text": "BebeLEC Day Centre (by The Dementia Society Perak), Jalan Lang, Ipoh"
+            },
+            {
+              "type": "paragraph",
+              "text": "05-506 0806"
+            },
+            {
+              "type": "header",
+              "text": "Johor"
+            },
+            {
+              "type": "paragraph",
+              "text": "Johor Bahru Alzheimer's Disease Support Association (JOBADA), Taman Dato Onn, Johor Bahru"
+            },
+            {
+              "type": "paragraph",
+              "text": "07-222 2016"
+            },
+            {
+              "type": "paragraph",
+              "text": "JOBADA Daycare Centre, Taman Dato Onn, Johor Bahru"
+            },
+            {
+              "type": "paragraph",
+              "text": "07-222 2016"
+            },
+            {
+              "type": "header",
+              "text": "Penang"
+            },
+            {
+              "type": "paragraph",
+              "text": "Penang Dementia Association"
+            },
+            {
+              "type": "paragraph",
+              "text": "D'Home Mental Health Association 66, Lintang Bukit Jambul, 11900 Bayan Lepas, Pulau Pinang."
+            },
+            {
+              "type": "paragraph",
+              "text": "011-5589 2628"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
