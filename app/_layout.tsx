@@ -12,6 +12,7 @@ import { useColorScheme } from "@/hooks/use-color-scheme";
 import React from "react";
 import { HapticTab } from "@/components/haptic-tab";
 import { IconSymbol } from "@/components/ui/icon-symbol";
+import { AppDarkTheme, AppLightTheme } from "@/styles/theme";
 
 export const unstable_settings = {
   anchor: "(tabs)",
@@ -21,7 +22,7 @@ function AllProviders({ children }: { children: React.ReactNode }) {
   const colorScheme = useColorScheme();
 
   return (
-    <PaperProvider>
+    <PaperProvider theme={colorScheme === "dark" ? AppDarkTheme : AppLightTheme}>
       <ThemeProvider
         value={colorScheme === "dark" ? RouterDarkTheme : RouterDefaultTheme}
       >
