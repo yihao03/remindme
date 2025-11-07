@@ -44,13 +44,13 @@ export default function ParallaxScrollView({ children, headerImage }: Props) {
   return (
     <Animated.ScrollView
       ref={scrollRef}
-      style={{ backgroundColor: theme.colors.error, flex: 1 }}
+      style={{ backgroundColor: theme.colors.primary, flex: 1 }}
       scrollEventThrottle={16}
     >
       <Animated.View
         style={[
           styles.header,
-          { backgroundColor: theme.colors.secondary },
+          { backgroundColor: theme.colors.primary },
           headerAnimatedStyle,
         ]}
       >
