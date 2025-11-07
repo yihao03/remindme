@@ -1218,7 +1218,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/js@npm:9.39.1":
+"@eslint/js@npm:9.39.1, @eslint/js@npm:^9.39.1":
   version: 9.39.1
   resolution: "@eslint/js@npm:9.39.1"
   checksum: 10c0/6f7f26f8cdb7ad6327bbf9741973b6278eb946f18f70e35406e88194b0d5c522d0547a34a02f2a208eec95c5d1388cdf7ccb20039efd2e4cb6655615247a50f1
@@ -2824,7 +2824,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:^8.18.2":
+"@typescript-eslint/eslint-plugin@npm:8.46.3, @typescript-eslint/eslint-plugin@npm:^8.18.2":
   version: 8.46.3
   resolution: "@typescript-eslint/eslint-plugin@npm:8.46.3"
   dependencies:
@@ -2845,7 +2845,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^8.18.2":
+"@typescript-eslint/parser@npm:8.46.3, @typescript-eslint/parser@npm:^8.18.2":
   version: 8.46.3
   resolution: "@typescript-eslint/parser@npm:8.46.3"
   dependencies:
@@ -4659,6 +4659,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"eslint-config-prettier@npm:^10.1.8":
+  version: 10.1.8
+  resolution: "eslint-config-prettier@npm:10.1.8"
+  peerDependencies:
+    eslint: ">=7.0.0"
+  bin:
+    eslint-config-prettier: bin/cli.js
+  checksum: 10c0/e1bcfadc9eccd526c240056b1e59c5cd26544fe59feb85f38f4f1f116caed96aea0b3b87868e68b3099e55caaac3f2e5b9f58110f85db893e83a332751192682
+  languageName: node
+  linkType: hard
+
 "eslint-import-resolver-node@npm:^0.3.9":
   version: 0.3.9
   resolution: "eslint-import-resolver-node@npm:0.3.9"
@@ -4809,7 +4820,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^9.24.0, eslint@npm:^9.25.0":
+"eslint@npm:^9.24.0, eslint@npm:^9.39.1":
   version: 9.39.1
   resolution: "eslint@npm:9.39.1"
   dependencies:
@@ -8065,6 +8076,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"prettier@npm:3.6.2":
+  version: 3.6.2
+  resolution: "prettier@npm:3.6.2"
+  bin:
+    prettier: bin/prettier.cjs
+  checksum: 10c0/488cb2f2b99ec13da1e50074912870217c11edaddedeadc649b1244c749d15ba94e846423d062e2c4c9ae683e2d65f754de28889ba06e697ac4f988d44f45812
+  languageName: node
+  linkType: hard
+
 "pretty-bytes@npm:^5.6.0":
   version: 5.6.0
   resolution: "pretty-bytes@npm:5.6.0"
@@ -8600,13 +8620,15 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "remindme@workspace:."
   dependencies:
+    "@eslint/js": "npm:^9.39.1"
     "@expo/vector-icons": "npm:^15.0.3"
     "@react-navigation/bottom-tabs": "npm:^7.4.0"
     "@react-navigation/elements": "npm:^2.6.3"
     "@react-navigation/native": "npm:^7.1.8"
     "@types/react": "npm:~19.1.0"
-    eslint: "npm:^9.25.0"
+    eslint: "npm:^9.39.1"
     eslint-config-expo: "npm:~10.0.0"
+    eslint-config-prettier: "npm:^10.1.8"
     expo: "npm:~54.0.22"
     expo-constants: "npm:~18.0.10"
     expo-font: "npm:~14.0.9"
@@ -8619,6 +8641,7 @@ __metadata:
     expo-symbols: "npm:~1.0.7"
     expo-system-ui: "npm:~6.0.8"
     expo-web-browser: "npm:~15.0.9"
+    prettier: "npm:3.6.2"
     react: "npm:19.1.0"
     react-dom: "npm:19.1.0"
     react-native: "npm:0.81.5"
@@ -8629,7 +8652,8 @@ __metadata:
     react-native-screens: "npm:~4.16.0"
     react-native-web: "npm:~0.21.0"
     react-native-worklets: "npm:0.5.1"
-    typescript: "npm:~5.9.2"
+    typescript: "npm:^5.9.3"
+    typescript-eslint: "npm:^8.46.3"
   languageName: unknown
   linkType: soft
 
@@ -9778,7 +9802,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:~5.9.2":
+"typescript-eslint@npm:^8.46.3":
+  version: 8.46.3
+  resolution: "typescript-eslint@npm:8.46.3"
+  dependencies:
+    "@typescript-eslint/eslint-plugin": "npm:8.46.3"
+    "@typescript-eslint/parser": "npm:8.46.3"
+    "@typescript-eslint/typescript-estree": "npm:8.46.3"
+    "@typescript-eslint/utils": "npm:8.46.3"
+  peerDependencies:
+    eslint: ^8.57.0 || ^9.0.0
+    typescript: ">=4.8.4 <6.0.0"
+  checksum: 10c0/c6d9398b16429b614c96405caae018b7ea74df55abf5ba9248ca9d02327704d6e1c3bdd2e2f52cfb25c9e5465ad93d73e19ee7fc3afbb837a6aeeecdf02c979b
+  languageName: node
+  linkType: hard
+
+"typescript@npm:^5.9.3":
   version: 5.9.3
   resolution: "typescript@npm:5.9.3"
   bin:
@@ -9788,7 +9827,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@npm%3A~5.9.2#optional!builtin<compat/typescript>":
+"typescript@patch:typescript@npm%3A^5.9.3#optional!builtin<compat/typescript>":
   version: 5.9.3
   resolution: "typescript@patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"
   bin:
