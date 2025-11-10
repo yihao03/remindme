@@ -18,8 +18,10 @@ interface Section {
   subsections: Subsection[];
 }
 
+type SectionListView = Omit<Section, 'subsections'>;
+
 interface EducationData {
   sections: Section[];
 }
 
-export { ContentItem, Subsection, Section, EducationData };
+export { ContentItem, Subsection, Section, SectionListView, EducationData };
