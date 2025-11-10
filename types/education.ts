@@ -13,6 +13,7 @@ interface Subsection {
 
 interface Section {
   title: string;
+  summary: string;
   id: number;
   subsections: Subsection[];
 }

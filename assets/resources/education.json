@@ -3,6 +3,7 @@
     {
       "title": "Section 1: Introduction to Dementia",
       "id": 1,
+      "summary": "Learn what dementia is, the most common types, how to recognize symptoms, and available treatment options.",
       "subsections": [
         {
           "title": "What is Dementia?",
@@ -219,6 +220,7 @@
     {
       "title": "Section 2: Being a Caregiver",
       "id": 2,
+      "summary": "Understand the caregiver role, key responsibilities, common challenges, and available support resources in Malaysia.",
       "subsections": [
         {
           "title": "The Role of a Dementia Caregiver",
@@ -342,6 +344,7 @@
     {
       "title": "Section 3: Caregiving Essentials",
       "id": 3,
+      "summary": "Practical tips for daily care, communication, managing behavioral changes, creating a safe environment, and maintaining caregiver well-being.",
       "subsections": [
         {
           "title": "Introduction",
@@ -558,6 +561,7 @@
     {
       "title": "Section 4: Caring for Yourself",
       "id": 4,
+      "summary": "Simple relaxation exercises, tips for making time for pleasant activities, and strategies to think positively about caregiving challenges.",
       "subsections": [
         {
           "title": "Introduction",

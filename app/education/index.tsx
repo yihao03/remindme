@@ -28,7 +28,7 @@ export default function EducationScreen() {
           title={section.title}
           key={index}
           id={section.id}
-          shortDescription=""
+          summary={section.summary}
         />
       ))}
     </ParallaxScrollView>

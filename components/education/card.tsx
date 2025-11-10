@@ -6,13 +6,13 @@ import { Link } from "expo-router";
 interface EducationalCardProps {
   title: string;
   id: number;
-  shortDescription: string;
+  summary: string;
 }
 
 export default function EducationCard({
   title,
   id,
-  shortDescription,
+  summary: shortDescription,
 }: EducationalCardProps) {
   return (
     <Link
