@@ -1,7 +1,6 @@
 import React from "react";
 import { StyleSheet } from "react-native";
 import { Collapsible } from "@/components/ui/collapsible";
-import { ThemedText } from "@/components/themed-text";
 import { ThemedView } from "@/components/themed-view";
 import { ContentRenderer } from "./content-renderer";
 import { Section } from "@/types/education";

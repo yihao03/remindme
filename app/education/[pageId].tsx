@@ -26,7 +26,7 @@ const Page = () => {
     navigation.setOptions({
       title: section?.title.split(":")[1].trim(),
     });
-  }, [section]);
+  }, [section, navigation]);
 
   if (!section) {
     return (

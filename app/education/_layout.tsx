@@ -1,4 +1,3 @@
-import { ThemedText } from "@/components/themed-text";
 import { Stack } from "expo-router";
 
 export default function StackLayout() {
