@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import {
   View,
   Text,
@@ -43,6 +44,7 @@ export default function LoginScreen() {
   };
 
   const styles = StyleSheet.create({
+  const styles = useMemo(() => StyleSheet.create({
     container: {
       flex: 1,
       backgroundColor: theme.colors.background,
@@ -104,7 +106,7 @@ export default function LoginScreen() {
       color: theme.colors.primary,
       fontWeight: '600',
     },
-  });
+  }), [theme]);
 
   return (
     <KeyboardAvoidingView

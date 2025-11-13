@@ -2,6 +2,7 @@ import { View, Text, StyleSheet, TouchableOpacity, Alert } from 'react-native';
 import { useRouter } from 'expo-router';
 import { useAuth } from "@/contexts/AuthContext"
 import { useTheme } from 'react-native-paper';
+import { useMemo } from 'react';
 
 export default function ProfileScreen() {
   const { user, logout } = useAuth();
@@ -31,7 +32,7 @@ export default function ProfileScreen() {
     );
   };
 
-  const styles = StyleSheet.create({
+  const styles = useMemo(() => StyleSheet.create({
     container: {
       flex: 1,
       backgroundColor: theme.colors.background,
@@ -74,7 +75,7 @@ export default function ProfileScreen() {
       fontSize: 16,
       fontWeight: '600',
     },
-  });
+  }), [theme]);
 
   return (
     <View style={styles.container}>
