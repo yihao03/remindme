@@ -3,15 +3,16 @@ import {
   DefaultTheme as RouterDefaultTheme,
   ThemeProvider,
 } from '@react-navigation/native';
-import { Stack, useRouter, useSegments } from 'expo-router';
+import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import 'react-native-reanimated';
 import { PaperProvider } from 'react-native-paper';
 
 import { useColorScheme } from '@/hooks/use-color-scheme';
-import React, { useEffect } from 'react';
+import React from 'react';
 import { AppDarkTheme, AppLightTheme } from '@/styles/theme';
 import { AuthProvider, useAuth } from '@/contexts/AuthContext';
+import { LoadingScreen } from '@/components/LoadingScreen';
 
 export const unstable_settings = {
   anchor: '(tabs)',
@@ -36,22 +37,10 @@ function AllProviders({ children }: { children: React.ReactNode }) {
 
 function RootLayoutNav() {
   const { user, loading } = useAuth();
-  const segments = useSegments();
-  const router = useRouter();
 
-  useEffect(() => {
-    if (loading) return;
-
-    const inAuthGroup = segments[0] === 'auth';
-
-    if (!user && !inAuthGroup) {
-      // Redirect to login if not authenticated
-      router.replace('/auth/login');
-    } else if (user && inAuthGroup) {
-      // Redirect to main app if authenticated
-      router.replace('/(tabs)');
-    }
-  }, [user, loading, segments, router]);
+  if (loading) {
+    return <LoadingScreen />;
+  }
 
   return (
     <Stack
@@ -59,10 +48,11 @@ function RootLayoutNav() {
         headerShown: false,
       }}
     >
-      <Stack.Screen name="(tabs)" />
-      <Stack.Screen name="auth" />
-      <Stack.Screen name="modal" options={{ presentation: 'modal' }} />
-      <Stack.Screen name="education" />
+      {user ? (
+        <Stack.Screen name='./authapp/' />
+      ) : (
+        <Stack.Screen name="./auth/" />
+      )}
     </Stack>
   );
 }
