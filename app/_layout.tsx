@@ -49,9 +49,9 @@ function RootLayoutNav() {
       }}
     >
       {user ? (
-        <Stack.Screen name='./authapp/' />
+        <Stack.Screen name={unstable_settings.anchor} />
       ) : (
-        <Stack.Screen name="./auth/" />
+        <Stack.Screen name="auth" />
       )}
     </Stack>
   );

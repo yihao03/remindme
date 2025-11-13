@@ -12,6 +12,7 @@ import {
 } from 'react-native';
 import { useRouter } from 'expo-router';
 import { useAuth } from '../../contexts/AuthContext';
+import { useTheme } from 'react-native-paper';
 
 export default function LoginScreen() {
   const [email, setEmail] = useState('');
@@ -19,6 +20,7 @@ export default function LoginScreen() {
   const [loading, setLoading] = useState(false);
   const { signIn } = useAuth();
   const router = useRouter();
+  const theme = useTheme();
 
   const handleLogin = async () => {
     if (!email || !password) {
@@ -29,7 +31,6 @@ export default function LoginScreen() {
     try {
       setLoading(true);
       await signIn(email, password);
-      router.replace('/(tabs)');
     } catch (error: any) {
       Alert.alert('Login Error', error.message || 'Failed to sign in');
     } finally {
@@ -40,6 +41,70 @@ export default function LoginScreen() {
   const navigateToSignup = () => {
     router.push('/auth/signup');
   };
+
+  const styles = StyleSheet.create({
+    container: {
+      flex: 1,
+      backgroundColor: theme.colors.background,
+    },
+    scrollContent: {
+      flexGrow: 1,
+    },
+    content: {
+      flex: 1,
+      padding: 20,
+      justifyContent: 'center',
+    },
+    title: {
+      fontSize: 32,
+      fontWeight: 'bold',
+      marginBottom: 8,
+      color: theme.colors.onBackground,
+    },
+    subtitle: {
+      fontSize: 16,
+      color: theme.colors.onSurfaceVariant,
+      marginBottom: 40,
+    },
+    form: {
+      width: '100%',
+    },
+    input: {
+      backgroundColor: theme.colors.surfaceVariant,
+      color: theme.colors.onSurfaceVariant,
+      padding: 15,
+      borderRadius: 10,
+      marginBottom: 15,
+      fontSize: 16,
+    },
+    button: {
+      backgroundColor: theme.colors.primary,
+      padding: 15,
+      borderRadius: 10,
+      alignItems: 'center',
+      marginTop: 10,
+    },
+    buttonDisabled: {
+      backgroundColor: theme.colors.surfaceDisabled,
+    },
+    buttonText: {
+      color: theme.colors.onPrimary,
+      fontSize: 16,
+      fontWeight: '600',
+    },
+    linkButton: {
+      marginTop: 20,
+      alignItems: 'center',
+    },
+    linkText: {
+      color: theme.colors.onSurfaceVariant,
+      fontSize: 14,
+    },
+    linkTextBold: {
+      color: theme.colors.primary,
+      fontWeight: '600',
+    },
+  });
 
   return (
     <KeyboardAvoidingView
@@ -55,6 +120,7 @@ export default function LoginScreen() {
             <TextInput
               style={styles.input}
               placeholder="Email"
+              placeholderTextColor={theme.colors.onSurfaceVariant}
               value={email}
               onChangeText={setEmail}
               autoCapitalize="none"
@@ -65,6 +131,7 @@ export default function LoginScreen() {
             <TextInput
               style={styles.input}
               placeholder="Password"
+              placeholderTextColor={theme.colors.onSurfaceVariant}
               value={password}
               onChangeText={setPassword}
               secureTextEntry
@@ -96,66 +163,3 @@ export default function LoginScreen() {
     </KeyboardAvoidingView>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-  },
-  scrollContent: {
-    flexGrow: 1,
-  },
-  content: {
-    flex: 1,
-    padding: 20,
-    justifyContent: 'center',
-  },
-  title: {
-    fontSize: 32,
-    fontWeight: 'bold',
-    marginBottom: 8,
-    color: '#333',
-  },
-  subtitle: {
-    fontSize: 16,
-    color: '#666',
-    marginBottom: 40,
-  },
-  form: {
-    width: '100%',
-  },
-  input: {
-    backgroundColor: '#f5f5f5',
-    padding: 15,
-    borderRadius: 10,
-    marginBottom: 15,
-    fontSize: 16,
-  },
-  button: {
-    backgroundColor: '#007AFF',
-    padding: 15,
-    borderRadius: 10,
-    alignItems: 'center',
-    marginTop: 10,
-  },
-  buttonDisabled: {
-    backgroundColor: '#ccc',
-  },
-  buttonText: {
-    color: '#fff',
-    fontSize: 16,
-    fontWeight: '600',
-  },
-  linkButton: {
-    marginTop: 20,
-    alignItems: 'center',
-  },
-  linkText: {
-    color: '#666',
-    fontSize: 14,
-  },
-  linkTextBold: {
-    color: '#007AFF',
-    fontWeight: '600',
-  },
-});
