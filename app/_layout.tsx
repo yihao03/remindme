@@ -3,7 +3,7 @@ import {
   DefaultTheme as RouterDefaultTheme,
   ThemeProvider,
 } from '@react-navigation/native';
-import { Stack } from 'expo-router';
+import { Stack, useRouter, useSegments } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import 'react-native-reanimated';
 import { PaperProvider } from 'react-native-paper';
@@ -37,6 +37,20 @@ function AllProviders({ children }: { children: React.ReactNode }) {
 
 function RootLayoutNav() {
   const { user, loading } = useAuth();
+  const segments = useSegments();
+  const router = useRouter();
+
+  React.useEffect(() => {
+    if (loading) return;
+
+    const inAuthGroup = segments[0] === 'auth';
+
+    if (!user && !inAuthGroup) {
+      router.replace('/auth/login');
+    } else if (user && inAuthGroup) {
+      router.replace('/education');
+    }
+  }, [user, loading, segments]);
 
   if (loading) {
     return <LoadingScreen />;
@@ -48,11 +62,8 @@ function RootLayoutNav() {
         headerShown: false,
       }}
     >
-      {user ? (
-        <Stack.Screen name={unstable_settings.anchor} />
-      ) : (
-        <Stack.Screen name="auth" />
-      )}
+      <Stack.Screen name="auth" />
+      <Stack.Screen name={unstable_settings.anchor} />
     </Stack>
   );
 }

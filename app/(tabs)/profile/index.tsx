@@ -1,5 +1,4 @@
 import { View, Text, StyleSheet, TouchableOpacity, Alert } from 'react-native';
-import { useRouter } from 'expo-router';
 import { useAuth } from "@/contexts/AuthContext"
 import { useTheme } from 'react-native-paper';
 import { useMemo } from 'react';

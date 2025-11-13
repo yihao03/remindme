@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import React, { useState, useMemo } from 'react';
 import {
   View,
@@ -43,7 +42,6 @@ export default function LoginScreen() {
     router.push('/auth/signup');
   };
 
-  const styles = StyleSheet.create({
   const styles = useMemo(() => StyleSheet.create({
     container: {
       flex: 1,

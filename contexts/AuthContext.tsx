@@ -9,7 +9,6 @@ import {
   updateProfile,
 } from 'firebase/auth';
 import { auth } from '../config/firebase';
-import { router } from 'expo-router';
 
 interface AuthContextType {
   user: User | null;
@@ -65,7 +64,6 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
   const logout = async () => {
     try {
       await signOut(auth);
-      router.replace('/auth/login');
     } catch (error) {
       throw error;
     }

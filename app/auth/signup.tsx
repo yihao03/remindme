@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import React, { useState, useMemo } from 'react';
 import {
   View,
@@ -44,7 +43,6 @@ export default function SignupScreen() {
     try {
       setLoading(true);
       await signUp(email, password, name);
-      router.replace('/(tabs)');
     } catch (error: any) {
       Alert.alert('Signup Error', error.message || 'Failed to create account');
     } finally {
