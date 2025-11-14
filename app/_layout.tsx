@@ -2,29 +2,31 @@ import {
   DarkTheme as RouterDarkTheme,
   DefaultTheme as RouterDefaultTheme,
   ThemeProvider,
-} from '@react-navigation/native';
-import { Stack, useRouter, useSegments } from 'expo-router';
-import { StatusBar } from 'expo-status-bar';
-import 'react-native-reanimated';
-import { PaperProvider } from 'react-native-paper';
+} from "@react-navigation/native";
+import { Stack, useRouter, useSegments } from "expo-router";
+import { StatusBar } from "expo-status-bar";
+import "react-native-reanimated";
+import { PaperProvider } from "react-native-paper";
 
-import { useColorScheme } from '@/hooks/use-color-scheme';
-import React from 'react';
-import { AppDarkTheme, AppLightTheme } from '@/styles/theme';
-import { AuthProvider, useAuth } from '@/contexts/AuthContext';
-import { LoadingScreen } from '@/components/LoadingScreen';
+import { useColorScheme } from "@/hooks/use-color-scheme";
+import React from "react";
+import { AppDarkTheme, AppLightTheme } from "@/styles/theme";
+import { AuthProvider, useAuth } from "@/contexts/AuthContext";
+import { LoadingScreen } from "@/components/LoadingScreen";
 
 export const unstable_settings = {
-  anchor: '(tabs)',
+  anchor: "(tabs)",
 };
 
 function AllProviders({ children }: { children: React.ReactNode }) {
   const colorScheme = useColorScheme();
 
   return (
-    <PaperProvider theme={colorScheme === 'dark' ? AppDarkTheme : AppLightTheme}>
+    <PaperProvider
+      theme={colorScheme === "dark" ? AppDarkTheme : AppLightTheme}
+    >
       <ThemeProvider
-        value={colorScheme === 'dark' ? RouterDarkTheme : RouterDefaultTheme}
+        value={colorScheme === "dark" ? RouterDarkTheme : RouterDefaultTheme}
       >
         <AuthProvider>
           <StatusBar style="auto" />
@@ -43,12 +45,12 @@ function RootLayoutNav() {
   React.useEffect(() => {
     if (loading) return;
 
-    const inAuthGroup = segments[0] === 'auth';
+    const inAuthGroup = segments[0] === "auth";
 
     if (!user && !inAuthGroup) {
-      router.replace('/auth/login');
+      router.replace("/auth/login");
     } else if (user && inAuthGroup) {
-      router.replace('/education');
+      router.replace("/education");
     }
   }, [user, loading, segments]);
 

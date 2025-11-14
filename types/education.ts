@@ -18,7 +18,7 @@ interface Section {
   subsections: Subsection[];
 }
 
-type SectionListView = Omit<Section, 'subsections'>;
+type SectionListView = Omit<Section, "subsections">;
 
 interface EducationData {
   sections: Section[];

@@ -2,7 +2,12 @@ import React from "react";
 import { View, StyleSheet, Linking, TouchableOpacity } from "react-native";
 import { ThemedText } from "@/components/themed-text";
 import { ThemedView } from "@/components/themed-view";
-import { spacing, fontSize, lineHeight, borderRadius } from "@/styles/constants";
+import {
+  spacing,
+  fontSize,
+  lineHeight,
+  borderRadius,
+} from "@/styles/constants";
 
 interface ContentItem {
   type: "paragraph" | "header" | "list" | "link" | "table";

@@ -28,11 +28,13 @@ This app uses Firebase Authentication with the Firebase JS SDK for user authenti
 ## Step 4: Configure Environment Variables
 
 1. Copy the `.env.example` file to create a new `.env` file:
+
    ```bash
    cp .env.example .env
    ```
 
 2. Fill in your Firebase configuration values in the `.env` file:
+
    ```env
    EXPO_PUBLIC_FIREBASE_API_KEY=your-api-key-here
    EXPO_PUBLIC_FIREBASE_AUTH_DOMAIN=your-project-id.firebaseapp.com
@@ -81,6 +83,7 @@ npm start
 ### Protected Routes
 
 The app automatically redirects users:
+
 - Unauthenticated users → Login screen
 - Authenticated users → Main app (tabs)
 
@@ -105,7 +108,7 @@ This is handled in `app/_layout.tsx` using the `RootLayoutNav` component.
 Add a sign-out button in your app using the `useAuth` hook:
 
 ```tsx
-import { useAuth } from '@/contexts/AuthContext';
+import { useAuth } from "@/contexts/AuthContext";
 
 function ProfileScreen() {
   const { logout } = useAuth();
@@ -114,13 +117,11 @@ function ProfileScreen() {
     try {
       await logout();
     } catch (error) {
-      console.error('Error signing out:', error);
+      console.error("Error signing out:", error);
     }
   };
 
-  return (
-    <Button onPress={handleLogout} title="Sign Out" />
-  );
+  return <Button onPress={handleLogout} title="Sign Out" />;
 }
 ```
 

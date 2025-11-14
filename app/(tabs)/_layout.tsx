@@ -1,8 +1,8 @@
-import { Tabs } from 'expo-router';
-import { useTheme } from 'react-native-paper';
-import { HapticTab } from '@/components/haptic-tab';
-import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
-import Ionicons from '@expo/vector-icons/Ionicons';
+import { Tabs } from "expo-router";
+import { useTheme } from "react-native-paper";
+import { HapticTab } from "@/components/haptic-tab";
+import FontAwesome6 from "@expo/vector-icons/FontAwesome6";
+import Ionicons from "@expo/vector-icons/Ionicons";
 
 export default function TabsLayout() {
   const theme = useTheme();
@@ -18,7 +18,7 @@ export default function TabsLayout() {
       <Tabs.Screen
         name="education"
         options={{
-          title: 'Education',
+          title: "Education",
           tabBarIcon: ({ color }) => (
             <FontAwesome6 name="book-bookmark" size={20} color={color} />
           ),
@@ -27,7 +27,7 @@ export default function TabsLayout() {
       <Tabs.Screen
         name="profile"
         options={{
-          title: 'Profile',
+          title: "Profile",
           tabBarIcon: ({ color }) => (
             <Ionicons name="person-circle-outline" size={20} color={color} />
           ),
