@@ -1,13 +1,19 @@
-import { ApiPromise, ApiResponse, StatusMessageType } from '@/types/network';
-import { getBaseApiUrl } from '@/utilities/url';
-import axios, { AxiosError, AxiosPromise, AxiosRequestConfig, AxiosResponse } from 'axios';
+import { auth } from "@/config/firebase";
+import { ApiPromise, ApiResponse, StatusMessageType } from "@/types/network";
+import { getBaseApiUrl } from "@/utilities/url";
+import axios, {
+  AxiosError,
+  AxiosPromise,
+  AxiosRequestConfig,
+  AxiosResponse,
+} from "axios";
 
 const DEFAULT_API_RESPONSE: ApiResponse<unknown> = Object.freeze({
   code: null,
   payload: { data: {}, meta: {} },
   messages: [
     {
-      content: 'Request failed. Please check your Internet connection.',
+      content: "Request failed. Please check your Internet connection.",
       type: StatusMessageType.ERROR,
     },
   ],
@@ -17,20 +23,51 @@ const client = axios.create({
   baseURL: getBaseApiUrl(),
 });
 
+client.interceptors.request.use(
+  async (config) => {
+    try {
+      const user = auth.currentUser;
+      if (user) {
+        const token = await user.getIdToken();
+        config.headers.Authorization = `Bearer ${token}`;
+      }
+    } catch (error) {
+      console.error("Error fetching auth token:", error);
+    }
+    return config;
+  },
+  (error) => {
+    return Promise.reject(error);
+  },
+);
+
 class BaseAPI {
-  private clientGet<D, M>(url: string, params?: any): AxiosPromise<ApiResponse<D, M>> {
+  private clientGet<D, M>(
+    url: string,
+    params?: any,
+  ): AxiosPromise<ApiResponse<D, M>> {
     return client.get(url, { params, ...this.getConfig() });
   }
 
-  private clientPost<D, M>(url: string, data: any = {}, multipart = false): AxiosPromise<ApiResponse<D, M>> {
+  private clientPost<D, M>(
+    url: string,
+    data: any = {},
+    multipart = false,
+  ): AxiosPromise<ApiResponse<D, M>> {
     return client.post(url, data, this.getConfig(multipart));
   }
 
-  private clientPut<D, M>(url: string, data: any = {}): AxiosPromise<ApiResponse<D, M>> {
+  private clientPut<D, M>(
+    url: string,
+    data: any = {},
+  ): AxiosPromise<ApiResponse<D, M>> {
     return client.put(url, data, this.getConfig());
   }
 
-  private clientPatch<D, M>(url: string, data: any = {}): AxiosPromise<ApiResponse<D, M>> {
+  private clientPatch<D, M>(
+    url: string,
+    data: any = {},
+  ): AxiosPromise<ApiResponse<D, M>> {
     return client.patch(url, data, this.getConfig());
   }
 
@@ -56,7 +93,11 @@ class BaseAPI {
    * @returns ApiPromise<D> A Promise that resolves to `ApiResponse<D>` if the
    *     request was successful, or rejects with an `ApiResponse<{}>` if the request fails.
    */
-  protected post<D, M>(url: string, data: any = {}, multipart = false): ApiPromise<D, M> {
+  protected post<D, M>(
+    url: string,
+    data: any = {},
+    multipart = false,
+  ): ApiPromise<D, M> {
     return processRequest(url, this.clientPost(url, data, multipart));
   }
 
@@ -98,42 +139,52 @@ class BaseAPI {
     };
 
     config.headers = {
-      Accept: 'application/json',
-      'Content-Type': 'application/json',
+      Accept: "application/json",
+      "Content-Type": "application/json",
     };
 
     if (multipart) {
-      config.headers['Content-Type'] = 'multipart/form-data';
+      config.headers["Content-Type"] = "multipart/form-data";
     }
 
     return config;
   }
 }
 
-function processRequest<D, M>(endpoint: string, promise: AxiosPromise<ApiResponse<D>>): ApiPromise<D, M> {
+function processRequest<D, M>(
+  endpoint: string,
+  promise: AxiosPromise<ApiResponse<D>>,
+): ApiPromise<D, M> {
   return promise
     .then((response: AxiosResponse) => {
       const apiResponse = { code: response.status, ...response.data };
-      if (process.env.NODE_ENV === 'development') {
+      if (process.env.NODE_ENV === "development") {
         /* tslint:disable-next-line */
-        console.info(`[API] ${response.status} ${endpoint} : ${getResponseMessages(apiResponse)}`);
+        console.info(
+          `[API] ${response.status} ${endpoint} : ${getResponseMessages(apiResponse)}`,
+        );
       }
       return apiResponse;
     })
     .catch((error: AxiosError) => {
-      let apiResponse: ApiResponse<unknown> = (error.response?.data as any) ?? DEFAULT_API_RESPONSE;
+      let apiResponse: ApiResponse<unknown> =
+        (error.response?.data as any) ?? DEFAULT_API_RESPONSE;
       const responseCode = error.response?.status ?? null;
       apiResponse = { ...apiResponse, code: responseCode };
-      if (process.env.NODE_ENV === 'development') {
+      if (process.env.NODE_ENV === "development") {
         /* tslint:disable-next-line */
-        console.error(`[API] ${responseCode} ${endpoint} : ${getResponseMessages(apiResponse)}`);
+        console.error(
+          `[API] ${responseCode} ${endpoint} : ${getResponseMessages(apiResponse)}`,
+        );
       }
       throw apiResponse;
     });
 }
 
 function getResponseMessages(response: ApiResponse<any>): string {
-  return response.messages?.length > 0 ? response.messages.map((message) => message.content).join(' : ') : '-';
+  return response.messages?.length > 0
+    ? response.messages.map((message) => message.content).join(" : ")
+    : "-";
 }
 
 export default BaseAPI;
