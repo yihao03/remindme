@@ -1,6 +1,7 @@
 import { StyleSheet, Text, type TextProps } from "react-native";
 
 import { useTheme } from "react-native-paper";
+import { fontSize, lineHeight } from "@/styles/constants";
 
 export type ThemedTextProps = TextProps & {
   type?: "default" | "title" | "defaultSemiBold" | "subtitle" | "link";
@@ -16,7 +17,7 @@ export function ThemedText({
   return (
     <Text
       style={[
-        { color: theme.colors.primary },
+        { color: theme.colors.onBackground },
         type === "default" ? styles.default : undefined,
         type === "title" ? styles.title : undefined,
         type === "defaultSemiBold" ? styles.defaultSemiBold : undefined,
@@ -31,12 +32,12 @@ export function ThemedText({
 
 const styles = StyleSheet.create({
   default: {
-    fontSize: 16,
-    lineHeight: 24,
+    fontSize: fontSize.md,
+    lineHeight: lineHeight.md,
   },
   defaultSemiBold: {
-    fontSize: 16,
-    lineHeight: 24,
+    fontSize: fontSize.lg,
+    lineHeight: lineHeight.md,
     fontWeight: "600",
   },
   title: {
@@ -45,12 +46,12 @@ const styles = StyleSheet.create({
     lineHeight: 32,
   },
   subtitle: {
-    fontSize: 20,
+    fontSize: fontSize.xl,
     fontWeight: "bold",
   },
   link: {
-    lineHeight: 30,
-    fontSize: 16,
+    fontSize: fontSize.md,
+    lineHeight: lineHeight.xl,
     color: "#0a7ea4",
   },
 });

@@ -2,6 +2,7 @@ import React from "react";
 import { View, StyleSheet, Linking, TouchableOpacity } from "react-native";
 import { ThemedText } from "@/components/themed-text";
 import { ThemedView } from "@/components/themed-view";
+import { spacing, fontSize, lineHeight, borderRadius } from "@/styles/constants";
 
 interface ContentItem {
   type: "paragraph" | "header" | "list" | "link" | "table";
@@ -80,51 +81,51 @@ export function ContentRenderer({ content }: ContentRendererProps) {
 
 const styles = StyleSheet.create({
   container: {
-    gap: 12,
+    gap: spacing.md,
   },
   paragraph: {
-    fontSize: 15,
-    lineHeight: 22,
+    fontSize: fontSize.md,
+    lineHeight: lineHeight.md,
   },
   header: {
-    fontSize: 17,
-    marginTop: 8,
-    marginBottom: 4,
+    fontSize: fontSize.lg,
+    marginTop: spacing.sm,
+    marginBottom: spacing.xs,
   },
   listContainer: {
-    gap: 8,
+    gap: spacing.sm,
   },
   listItem: {
     flexDirection: "row",
-    gap: 8,
-    paddingLeft: 8,
+    gap: spacing.sm,
+    paddingLeft: spacing.sm,
   },
   bullet: {
-    fontSize: 15,
-    lineHeight: 22,
+    fontSize: fontSize.md,
+    lineHeight: lineHeight.md,
     marginTop: -2,
   },
   listText: {
     flex: 1,
-    fontSize: 15,
-    lineHeight: 22,
+    fontSize: fontSize.md,
+    lineHeight: lineHeight.md,
   },
   linkContainer: {
-    paddingVertical: 4,
+    paddingVertical: spacing.xs,
   },
   link: {
-    fontSize: 15,
+    fontSize: fontSize.md,
     textDecorationLine: "underline",
   },
   tableNote: {
-    padding: 12,
-    borderRadius: 8,
+    padding: spacing.md,
+    borderRadius: borderRadius.md,
     borderWidth: 1,
     borderColor: "#ddd",
     backgroundColor: "#f9f9f9",
   },
   tableNoteText: {
-    fontSize: 14,
+    fontSize: fontSize.sm,
     fontStyle: "italic",
   },
 });
