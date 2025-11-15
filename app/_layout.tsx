@@ -3,16 +3,16 @@ import {
   DefaultTheme as RouterDefaultTheme,
   ThemeProvider,
 } from "@react-navigation/native";
-import { Tabs } from "expo-router";
+import { Stack, useRouter, useSegments } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import "react-native-reanimated";
-import { PaperProvider, useTheme } from "react-native-paper";
+import { PaperProvider } from "react-native-paper";
 
 import { useColorScheme } from "@/hooks/use-color-scheme";
 import React from "react";
-import { HapticTab } from "@/components/haptic-tab";
-import { IconSymbol } from "@/components/ui/icon-symbol";
 import { AppDarkTheme, AppLightTheme } from "@/styles/theme";
+import { AuthProvider, useAuth } from "@/contexts/AuthContext";
+import { LoadingScreen } from "@/components/LoadingScreen";
 
 export const unstable_settings = {
   anchor: "(tabs)",
@@ -22,51 +22,58 @@ function AllProviders({ children }: { children: React.ReactNode }) {
   const colorScheme = useColorScheme();
 
   return (
-    <PaperProvider theme={colorScheme === "dark" ? AppDarkTheme : AppLightTheme}>
+    <PaperProvider
+      theme={colorScheme === "dark" ? AppDarkTheme : AppLightTheme}
+    >
       <ThemeProvider
         value={colorScheme === "dark" ? RouterDarkTheme : RouterDefaultTheme}
       >
-        <StatusBar style="auto" />
-        {children}
+        <AuthProvider>
+          <StatusBar style="auto" />
+          {children}
+        </AuthProvider>
       </ThemeProvider>
     </PaperProvider>
   );
 }
 
+function RootLayoutNav() {
+  const { user, loading } = useAuth();
+  const segments = useSegments();
+  const router = useRouter();
+
+  React.useEffect(() => {
+    if (loading) return;
+
+    const inAuthGroup = segments[0] === "auth";
+
+    if (!user && !inAuthGroup) {
+      router.replace("/auth/login");
+    } else if (user && inAuthGroup) {
+      router.replace("/education");
+    }
+  }, [user, loading, segments]);
+
+  if (loading) {
+    return <LoadingScreen />;
+  }
+
+  return (
+    <Stack
+      screenOptions={{
+        headerShown: false,
+      }}
+    >
+      <Stack.Screen name="auth" />
+      <Stack.Screen name={unstable_settings.anchor} />
+    </Stack>
+  );
+}
+
 export default function RootLayout() {
-  const theme = useTheme();
   return (
     <AllProviders>
-      <Tabs
-        screenOptions={{
-          tabBarActiveTintColor: theme.colors.outline,
-          headerShown: false,
-          tabBarButton: HapticTab,
-        }}
-      >
-        <Tabs.Screen
-          name="modal"
-          options={{
-            title: "Home",
-            tabBarIcon: ({ color }) => (
-              <IconSymbol size={28} name="house.fill" color={color} />
-            ),
-          }}
-        />
-        <Tabs.Screen
-          name="education"
-          options={{
-            title: "Education",
-            tabBarIcon: ({ color }) => (
-              <IconSymbol
-                size={28}
-                name="chevron.left.forwardslash.chevron.right"
-                color={color}
-              />
-            ),
-          }}
-        />
-      </Tabs>
+      <RootLayoutNav />
     </AllProviders>
   );
 }

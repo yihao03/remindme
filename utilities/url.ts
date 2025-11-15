@@ -2,10 +2,10 @@
 
 import { ProcessWithEnv } from "@/types/process";
 
-
 export const getBaseApiUrl = () => {
-  const res = `${(process as ProcessWithEnv).env.EXPO_PUBLIC_BACKEND_PROTOCOL}://${(process as ProcessWithEnv).env.EXPO_PUBLIC_BACKEND_URL
-    }${(process as ProcessWithEnv).env.EXPO_PUBLIC_API_ROUTE}`;
+  const res = `${(process as ProcessWithEnv).env.EXPO_PUBLIC_BACKEND_PROTOCOL}://${
+    (process as ProcessWithEnv).env.EXPO_PUBLIC_BACKEND_URL
+  }${(process as ProcessWithEnv).env.EXPO_PUBLIC_API_ROUTE}`;
   return res;
 };
 

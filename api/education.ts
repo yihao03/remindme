@@ -4,7 +4,7 @@ import { Section, SectionListView } from "@/types/education";
 
 class EducationAPI extends BaseAPI {
   private getEducationUrl() {
-    return '/educations';
+    return "/educations";
   }
 
   public getEducationList(): ApiPromise<SectionListView> {

@@ -1,6 +1,6 @@
 // NOTE: Make sure types are synced and consistent across frontend and backend projects
 
-type HttpProtocol = 'http' | 'https';
+type HttpProtocol = "http" | "https";
 
 export type Env = {
   BACKEND_PROTOCOL: HttpProtocol;

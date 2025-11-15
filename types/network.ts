@@ -11,13 +11,13 @@ export enum StatusMessageType {
 }
 
 export enum ErrorCode {
-  AuthenticationError = 'APP100',
-  AuthorisationError = 'APP101',
-  TwoFAAuthorisationError = '2FA100',
-  TwoFAAlreadyExistsError = '2FA101',
-  InvalidOTPError = '2FA102',
-  ExpiredOTPError = '2FA103',
-  DefaultError = '',
+  AuthenticationError = "APP100",
+  AuthorisationError = "APP101",
+  TwoFAAuthorisationError = "2FA100",
+  TwoFAAlreadyExistsError = "2FA101",
+  InvalidOTPError = "2FA102",
+  ExpiredOTPError = "2FA103",
+  DefaultError = "",
 }
 /**
  * Describes the shape of the JSON response from API endpoints.
